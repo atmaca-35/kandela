@@ -75,9 +75,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         filteredWords.forEach(word => {
             const wordDetails = dictionaryData[word];
             const description = wordDetails.description.replace(/<br>/g, "");
-            resultDiv.innerHTML += `
-                <p class="description">${highlightWords(sanitizeHTML(description))}</p>
-            `;
+            resultDiv.innerHTML += 
+                `<p class="description">${highlightWords(sanitizeHTML(description))}</p>`;
         });
 
         resultDiv.style.animation = 'none';
@@ -151,7 +150,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     function getTextWidth(text, fontSize) {
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
-        context.font = `${fontSize}px 'Arial', sans-serif`;
+        context.font = `${fontSize}px 'Poppins', sans-serif`;
         return context.measureText(text).width;
     }
 
