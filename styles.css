@@ -69,6 +69,7 @@ main {
   background-color: #1f1f1f;
   color: white;
   caret-color: #32CD32;
+  line-height: 35px; /* Adjust line height to match the input height */
 }
 
 /* Hayalet Metin Stilleri */
@@ -80,6 +81,7 @@ main {
   white-space: nowrap;
   top: 50%;
   transform: translateY(-50%);
+  line-height: 35px; /* Same as input's height for vertical alignment */
 }
 
 /* Sonuç Alanı */
