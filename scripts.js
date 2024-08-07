@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         dictionaryData = await response.json();
 
         const wordCount = Object.keys(dictionaryData).length;
-        wordCountElement.innerHTML = `Türk dilinin "<span class="highlight">${wordCount}</span>" maddelik arkeolojisi.`;
+        wordCountElement.innerHTML = `Türk dilinin <span class="highlight">${wordCount}</span> maddelik arkeolojisi.`;
     } catch (error) {
         console.error('Sözlük yüklenirken bir hata oluştu:', error);
         hasError = true;
